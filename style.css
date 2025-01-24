@@ -83,18 +83,22 @@ header, .hero{
   text-align: center;
 }
 
+.img-wrapper{
+  height: 25vh;
+}
+
 .transform__img-ctn{
   background: url("images/mobile/image-transform.jpg") no-repeat;
   background-position: center;
   background-size: cover;
-  min-height: 50vh;
+  height:100%;
 }
 
 .stand-out__img-ctn{
   background: url("images/mobile/image-stand-out.jpg") no-repeat;
   background-position: center;
   background-size: cover;
-  min-height: 50vh;
+  height:100%;
 }
 
 .article__title{
@@ -111,28 +115,35 @@ header, .hero{
 }
 
 /* Graphic Design Section */
+.two-col{
+  display:block;
+  height:80vh;
+}
 .img-graphic{
   background: url("./images/mobile/image-graphic-design.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  height:50%;
 }
 
 .img-photography{
   background: url("./images/mobile/image-photography.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  height:50%;
 }
 
 .article-graphic,
 .article-photography{
-  min-height: 60vh;
   display:flex;
   flex-direction: column;
   justify-content: end;
   text-align: center;
+  height:100%;
 }
+
 
 .two-col__title{
   padding-bottom: 1em ;
@@ -143,6 +154,7 @@ header, .hero{
 }
 
 .two-col__content{
+  padding-bottom: 1em;
   font-size: 0.8rem;
   color:var(--dark-desaturated-blue);
   opacity: 0.8;
@@ -243,7 +255,7 @@ header, .hero{
   margin: 3.5em 0;
 }
 
-@media (min-width:700px){
+@media (min-width:600px){
   body{
     margin:0;
     padding:0;
@@ -255,7 +267,7 @@ header, .hero{
   }
 
   .container{
-    padding:4em;
+    padding: 0 4em;
     margin:0 auto;
     display:flex;
     flex-direction: column;
@@ -265,10 +277,12 @@ header, .hero{
   .transform{
     display:flex;
     flex-direction: row-reverse;
-    min-height: 40vw;
+    /* min-height: 30vh; */
+    height:32rem;
   }
 
   .img-wrapper{
+    height:100%;
     width: 50%;
   }
 
@@ -281,12 +295,11 @@ header, .hero{
   }
   .transform__img-ctn,
   .stand-out__img-ctn{
-    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height:100%;
     width:100%;
-    min-height: 0;
+    /* min-height: 0; */
   }
 
   .transform__article,.stand-out__article{
@@ -298,6 +311,7 @@ header, .hero{
   .stand-out{
     display:flex;
     margin:0;
+    height:32rem;
   }
 
   .two-col{
