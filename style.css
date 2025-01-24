@@ -318,8 +318,16 @@ header, .hero{
     display:flex;
   }
 
-  /* Images */
-  /* .transform__img-ctn .desktop-img{
-    background:url(./images/desktop/image-stand-out.jpg)
-  } */
+
+  /* Testimonials 3 col */
+
+  .testimonials{
+    padding: 10em 0;
+  }
+
+  .testimonials__row{
+    display:flex;
+    gap:2.5em;
+  }
+
 }
