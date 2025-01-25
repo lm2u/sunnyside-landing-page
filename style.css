@@ -268,9 +268,10 @@ header, .hero{
     padding:0;
   }
   :root{
-    --font-article-title: 1.6rem;
-    --font-two-col-title: 1.4rem;
-    --font-testimonials-position:0.8rem;
+    --font-article-title: 1.8rem;
+    --font-two-col-title: 1.6rem;
+    --font-testimonials-position:0.9rem;
+    --body-font-size:20px;
   }
 
   .container{
@@ -324,6 +325,39 @@ header, .hero{
   .two-col{
     display:flex;
   }
+
+  .two-col{
+    height:32rem;
+  }
+  .img-graphic{
+    background: url("./images/desktop/image-graphic-design.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:100%;
+    width: 50%;
+  }
+  
+  .img-photography{
+    background: url("./images/desktop/image-photography.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:100%;
+    width: 50%;
+  }
+  
+  .article-graphic,
+  .article-photography{
+    display:flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+    height:100%;
+    padding: 4em 6em;
+  }
+  
+
 
 
   /* Testimonials 3 col */
