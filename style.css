@@ -223,6 +223,13 @@ header, .hero{
   width:50%;
 }
 
+.desktop-milkbottle,
+.desktop-orange,
+.desktop-cone,
+.desktop-sugar-cubes{
+  display:none;
+}
+
 /* Footer */
 .footer{
   background-color: var(--footer-bg);
@@ -330,4 +337,22 @@ header, .hero{
     gap:2.5em;
   }
 
+  /* Gallery */
+  .gallery{
+    display:flex;
+    flex-wrap: nowrap;
+  }
+
+  .desktop-milkbottle,
+  .desktop-orange,
+  .desktop-cone,
+  .desktop-sugar-cubes{
+    display:block;
+  }
+  .mobile-milkbottle,
+  .mobile-orange,
+  .mobile-cone,
+  .mobile-sugar-cubes{
+    display:none;
+  }
 }
