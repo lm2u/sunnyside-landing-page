@@ -335,6 +335,7 @@ body{
   margin:2.5em;
   width: 50%;
   max-width: 150px;
+  filter: invert(40%) sepia(5%) saturate(2639%) hue-rotate(112deg) brightness(65%) contrast(89%);
 }
 
 .footer__links{
